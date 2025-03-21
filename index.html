@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Study Timer</h1>
+        <div id="timer">25:00</div>
+        <input type="number" id="studyMinutes" placeholder="Enter minutes" min="1">
+        <button onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Pause</button>
+        <button onclick="resetTimer()">Reset</button>
+
+        <h2>🎶 Background Sounds</h2>
+        <select id="musicSelect">
+            <option value="none">🔇 No Music</option>
+            <option value="lofi.mp3">🎵 Lo-Fi</option>
+            <option value="rain.mp3">🌧️ Rain</option>
+            <option value="waves.mp3">🌊 Ocean Waves</option>
+            <option value="fireplace.mp3">🔥 Fireplace</option>
+        </select>
+        <button onclick="playMusic()">Play</button>
+        <button onclick="pauseMusic()">Pause</button>
+    </div>
+
+    <!-- Study Schedule Section -->
+    <div class="container">
+        <h2>📅 Study Schedule</h2>
+        <input type="text" id="subject" placeholder="Subject">
+        <input type="time" id="startTime">
+        <input type="time" id="endTime">
+        <button onclick="addSchedule()">➕ Add Schedule</button>
+
+        <table id="scheduleTable">
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Start Time</th>
+                    <th>End Time</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Schedule will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <audio id="timerSound" src="ding.mp3"></audio>
+    <audio id="bgMusic" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
