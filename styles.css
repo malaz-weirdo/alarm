@@ -5,25 +5,25 @@ body {
     color: white;
     text-align: center;
     margin: 0;
-    padding: 20px;
+    padding: 10px;
 }
 
 /* Container Box */
 .container {
     background: #1E1E1E;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
-    width: 90%;
-    max-width: 400px;
-    margin: 20px auto;
+    width: 95%;
+    max-width: 350px;
+    margin: 15px auto;
     box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
 }
 
 /* Timer Display */
 #timer {
-    font-size: 48px;
+    font-size: 36px;
     font-weight: bold;
-    padding: 10px;
+    padding: 8px;
     background: #222;
     border-radius: 10px;
     display: inline-block;
@@ -35,11 +35,12 @@ button {
     background: #444;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 8px 12px;
     margin: 5px;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    font-size: 14px;
 }
 
 button:hover {
@@ -51,21 +52,25 @@ input, select {
     background: #222;
     color: white;
     border: 1px solid #444;
-    padding: 8px;
+    padding: 6px;
     margin: 5px;
     border-radius: 5px;
+    font-size: 14px;
+    width: 90%;
+    max-width: 300px;
 }
 
 /* Study Schedule */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 15px;
+    margin-top: 10px;
+    font-size: 14px;
 }
 
 th, td {
     border: 1px solid white;
-    padding: 10px;
+    padding: 8px;
     text-align: center;
 }
 
@@ -77,8 +82,9 @@ td button {
     background: red;
     color: white;
     border: none;
-    padding: 5px;
+    padding: 4px;
     cursor: pointer;
+    font-size: 12px;
 }
 
 td button:hover {
